@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Autobazar - HomePage</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
+	<link rel = "stylesheet" type = "text/css" href = "css/grid.css" />
+	<link rel = "stylesheet" type = "text/css" href = "css/main.css" />
+	<link rel = "stylesheet" type = "text/css" href = "css/nouislider.min.css" />
+	<link rel="stylesheet" href="css/chosen.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/wNumb.js"></script>
+	<script src="js/chosen.jquery.js" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<div class="main-container">
+
+
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" class="logo-image"/></a>
+				</div>
+				<div class="menu-icon"></div>
+				<nav class="nav nav-top">
+					<a href="#" class="active">Domů</a>
+					<a href="#">Nabídka vozů</a>
+					<a href="#">Výkup vozů</a>
+					<a href="#">Nákup vozů</a>
+					<a href="#">Pojištění</a>
+					<a href="#">Kontakty</a>
+				</nav>
+			</div>
+		</header>
+
+
+
+
+		<div class="container">
+			<div class="slider">
+				<ul class="rslides">
+					<li>
+						<img src="images/car1.jpeg" alt="">
+						<div class="overlayer"></div>
+						<div class="slider-text">
+							<div class="slider-text-title">Volkswagen Sharan</br>2.0TDi</div>
+						</div>
+						<div class="slider-text-bottom">
+							<div class="row">
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell najeto">185 342 Km</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell benzin">Nafta</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell rok">2005</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell type">Hatchback</div>
+								<div class="col-md-4 col-xs-12 slider-text-cell text-cell cena">
+									<div>98 999 kč</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li>
+						<img src="images/car2.jpg" alt="">
+						<div class="overlayer"></div>
+						<div class="slider-text">
+							<div class="slider-text-title">Volkswagen Sharan</br>2.0TDi</div>
+						</div>
+						<div class="slider-text-bottom">
+							<div class="row">
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell najeto">185 342 Km</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell benzin">Nafta</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell rok">2008</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell type">Hatchback</div>
+								<div class="col-md-4 col-xs-12 slider-text-cell text-cell cena">139 999 kč</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="images/car3.webp" alt="">
+						<div class="overlayer"></div>
+						<div class="slider-text">
+							<div class="slider-text-title">Volkswagen Sharan</br>2.0TDi</div>
+						</div>
+						<div class="slider-text-bottom">
+							<div class="row">
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell najeto">185 342 Km</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell benzin">Nafta</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell rok">2010</div>
+								<div class="col-md-2 col-xs-6 slider-text-cell text-cell type">Hatchback</div>
+								<div class="col-md-4 col-xs-12 slider-text-cell text-cell cena">59 999 kč</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		
+
+		<section class="container">
+
+			<div class="row">
+
+
+				<div class="col-md-4 col-md-push-8">
+					<div class="white-box">
+						<form>
+							<label for="karoserie">Karoserie</label>
+							<select>
+								 <option value="cerna">Černá</option>
+								 <option value="bila">Bílá</option>
+							</select>
+							<label for="znacka">Značka</label>
+							<select>
+								 <option value="cerna">Černá</option>
+								 <option value="bila">Bílá</option>
+							</select>
+							<div class="row">
+								<div class="col-md-6">
+									<label for="palivo">Palivo</label>
+									<select>
+										 <option value="cerna">Černá</option>
+										 <option value="bila">Bílá</option>
+									</select>
+									
+								</div>
+								<div class="col-md-6">
+									<label for="registrace">1. registrace</label>
+									<select>
+										 <option value="cerna">Černá</option>
+										 <option value="bila">Bílá</option>
+									</select>
+								</div>
+							</div>
+							<label for="najeto-od">Najeto</label>					
+							<div class="row">
+								<div class="col-md-6">
+									<select>
+										<option value="cerna">Od</option>
+										 <option value="cerna">Černá</option>
+										 <option value="bila">Bílá</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<select>
+										<option value="cerna">Do</option>
+										 <option value="cerna">Černá</option>
+										 <option value="bila">Bílá</option>
+									</select>
+								</div>
+							</div>
+							
+							
+							
+							<label for="cena-od">Cena</label>
+							<div class="row">
+								<div class="col-md-6">
+									<input id="price-from" type="text" placeholder="20 000 Kč">
+								</div>
+								<div class="col-md-6">
+									<input id="price-to" type="text" placeholder="20 000 Kč">
+								</div>
+							</div>
+
+							<div id="price-slider"></div>
+
+							<input type="submit" value="Vyhledat">
+							<div class="found-items">
+								Nalezeno: <b>264</b> 
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div class="col-md-8 col-md-pull-4">
+					<div class="white-box">
+						<h2 class="silent-heading offer-heading">Akční nabídka vozů</h2>
+						<div class="action-offer">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="offer-item">
+										<div class="offer-item-image">
+											<a href="#"><img src="images/car1.jpeg"/></a>
+										</div>
+										<div class="row offer-text">
+											<div class="col-md-8">
+												<div class="offer-item-title"><a href="#"><h3>Ford Mondeo 2.0 TDCi sport</h3></a></div>
+											</div>
+											<div class="col-md-4">
+												<div class="offer-item-price">
+													139 999 kč
+												</div>
+											</div>
+											<div class="col-md-12"><div class="bottom-bar"></div></div>
+										</div>
+									
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="offer-item">
+										<div class="offer-item-image">
+											<a href="#"><img src="images/car1.jpeg"/></a>
+										</div>
+										<div class="row offer-text">
+											<div class="col-md-8">
+												<div class="offer-item-title"><a href="#"><h3>Ford Mondeo 2.0 TDCi sport</h3></a></div>
+											</div>
+											<div class="col-md-4">
+												<div class="offer-item-price">
+													139 999 kč
+												</div>
+											</div>
+											<div class="col-md-12"><div class="bottom-bar"></div></div>
+										</div>
+									
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="offer-item">
+										<div class="offer-item-image">
+											<a href="#"><img src="images/car1.jpeg"/></a>
+										</div>
+										<div class="row offer-text">
+											<div class="col-md-8">
+												<div class="offer-item-title"><a href="#"><h3>Ford Mondeo 2.0 TDCi sport</h3></a></div>
+											</div>
+											<div class="col-md-4">
+												<div class="offer-item-price">
+													139 999 kč
+												</div>
+											</div>
+											<div class="col-md-12"><div class="bottom-bar"></div></div>
+										</div>
+									
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="offer-item">
+										<div class="offer-item-image">
+											<a href="#"><img src="images/car1.jpeg"/></a>
+										</div>
+										<div class="row offer-text">
+											<div class="col-md-8">
+												<div class="offer-item-title"><a href="#"><h3>Ford Mondeo 2.0 TDCi sport</h3></a></div>
+											</div>
+											<div class="col-md-4">
+												<div class="offer-item-price">
+													139 999 kč
+												</div>
+											</div>
+											<div class="col-md-12"><div class="bottom-bar"></div></div>
+										</div>
+									
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+							</div>
+			
+							<div class="more-offers"><a href="nabidka.html">Více akčních vozů</a></div>
+						</div>
+					</div>
+					<div class="contact-box">
+						<div class="row">
+							<div class="col-md-8">
+							<h2 class="contact-box-heading">Prodejte svůj vůz s náma.</h2>
+							<p class="contact-box-text">Kontaktujte naše prodejce</p>
+							</div>
+							<div class="col-md-4">
+								<a class="contact-box-link highlight-link" href="#">Kontakt</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</section>
+			
+
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo-dark.png" class="logo-image-dark"/></a>
+				</div>
+				<div class="footer-text row">
+					<p class="col-sm-3">Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="copyright col-md-3">
+						© 2019 Logo.net
+					</div>
+					<div class="col-md-9">
+						<nav class="nav nav-bottom">
+							<a href="#">Domů</a>
+							<a href="#">Nabídka vozů</a>
+							<a href="#">Výkup vozů</a>
+							<a href="#">Nákup vozů</a>
+							<a href="#">Pojištění</a>
+							<a href="#">Kontakty</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+
+</html>

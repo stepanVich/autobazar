@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Autobazar - Nabídka vozů</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
+	<link rel = "stylesheet" type = "text/css" href = "css/grid.css" />
+	<link rel = "stylesheet" type = "text/css" href = "css/main.css" />
+	<link rel = "stylesheet" type = "text/css" href = "css/nouislider.min.css" />
+	<link rel = "stylesheet" href = "css/chosen.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/wNumb.js"></script>
+	<script src="js/chosen.jquery.js" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<div class="main-container">
+
+
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" class="logo-image"/></a>
+				</div>
+				<div class="menu-icon"></div>
+				<nav class="nav nav-top">
+					<a href="#" class="active">Domů</a>
+					<a href="#">Nabídka vozů</a>
+					<a href="#">Výkup vozů</a>
+					<a href="#">Nákup vozů</a>
+					<a href="#">Pojištění</a>
+					<a href="#">Kontakty</a>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="container">
+			<div class="page-highlight page-highlight-nabidka">
+				<h2>Nabídka vozů</h2>
+				<div class="overlayer"></div>
+			</div>
+
+		</div>
+
+		<section class="container">
+
+			<div class="row">
+
+
+				<div class="col-sm-4 col-sm-push-8">
+					<div class="white-box">
+						<form>
+							<label for="karoserie">Karoserie</label>
+							<select>
+								 <option value="cerna">Černá</option>
+								 <option value="bila">Bílá</option>
+							</select>
+							<label for="znacka">Značka</label>
+							<select>
+								 <option value="cerna">Černá</option>
+								 <option value="bila">Bílá</option>
+							</select>
+							<div class="row">
+								<div class="col-md-6">
+									<label for="palivo">Palivo</label>
+									<select>
+										 <option value="cerna">Černá</option>
+										 <option value="bila">Bílá</option>
+									</select>
+									
+								</div>
+								<div class="col-md-6">
+									<label for="registrace">1. registrace</label>
+									<select>
+										 <option value="cerna">Černá</option>
+										 <option value="bila">Bílá</option>
+									</select>
+								</div>
+							</div>
+							<label for="najeto-od">Najeto</label>					
+							<div class="row">
+								<div class="col-md-6">
+									<select>
+										<option value="cerna">Od</option>
+										 <option value="cerna">Černá</option>
+										 <option value="bila">Bílá</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<select>
+										<option value="cerna">Do</option>
+										 <option value="cerna">Černá</option>
+										 <option value="bila">Bílá</option>
+									</select>
+								</div>
+							</div>
+							
+							
+							
+							<label for="cena-od">Cena</label>
+							<div class="row">
+								<div class="col-md-6">
+									<input id="price-from" type="text" placeholder="20 000">
+								</div>
+								<div class="col-md-6">
+									<input id="price-to" type="text" placeholder="20 000">
+								</div>
+							</div>
+
+							<div id="price-slider"></div>
+
+							<input type="submit" value="Vyhledat">
+							<div class="found-items">
+								Nalezeno: <b>264</b> 
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+
+				<div class="col-sm-8 col-sm-pull-4">
+					<div class="white-box">
+						<div class="sorting-form">
+							<form id="sorting-form">
+								<label class="sorting-select-label" for="sorting-select">Seřadit podle:</label>
+								<select id="sorting-select" class="sorting-select">
+									<option>Ceny</option>
+								</select>
+							</form>
+						</div>
+						<div class="cars">
+							
+							<div class="car-item row">
+								<div class="col-md-3">
+									<div class="car-image">
+										<a href="vuz.html"><img src="images/car2.jpg"/></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="car-title"><h4><a href="vuz.html">Volkswagen Sharan 2.0TDi</a></h4></div>
+									<div class="car-details">
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="car-price">
+										<div class="slider-text-cell text-cell cena">98 999 kč</div>
+									</div>
+									<a href="vuz.html" class="car-link highlight-link">Detail Vozu</a>
+								</div>
+							</div>
+
+							<div class="car-item row">
+								<div class="col-md-3">
+									<div class="car-image">
+										<a href="#"><img src="images/car2.jpg"/></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="car-title"><h4><a href="#">Volkswagen Sharan 2.0TDi</a></h4></div>
+									<div class="car-details">
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="car-price">
+										<div class="slider-text-cell text-cell cena">98 999 kč</div>
+									</div>
+									<a href="#" class="car-link highlight-link">Detail Vozu</a>
+								</div>
+							</div>
+
+							<div class="car-item row">
+								<div class="col-md-3">
+									<div class="car-image">
+										<a href="#"><img src="images/car2.jpg"/></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="car-title"><h4><a href="#">Volkswagen Sharan 2.0TDi</a></h4></div>
+									<div class="car-details">
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="car-price">
+										<div class="slider-text-cell text-cell cena">98 999 kč</div>
+									</div>
+									<a href="#" class="car-link highlight-link">Detail Vozu</a>
+								</div>
+							</div>
+
+
+							<div class="car-item row">
+								<div class="col-md-3">
+									<div class="car-image">
+										<a href="#"><img src="images/car2.jpg"/></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="car-title"><h4><a href="#">Volkswagen Sharan 2.0TDi</a></h4></div>
+									<div class="car-details">
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="car-price">
+										<div class="slider-text-cell text-cell cena">98 999 kč</div>
+									</div>
+									<a href="#" class="car-link highlight-link">Detail Vozu</a>
+								</div>
+							</div>
+
+
+							<div class="car-item row">
+								<div class="col-md-3">
+									<div class="car-image">
+										<a href="#"><img src="images/car2.jpg"/></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="car-title"><h4><a href="#">Volkswagen Sharan 2.0TDi</a></h4></div>
+									<div class="car-details">
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="car-price">
+										<div class="slider-text-cell text-cell cena">98 999 kč</div>
+									</div>
+									<a href="#" class="car-link highlight-link">Detail Vozu</a>
+								</div>
+							</div>
+
+
+							<div class="car-item row">
+								<div class="col-md-3">
+									<div class="car-image">
+										<a href="#"><img src="images/car2.jpg"/></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="car-title"><h4><a href="#">Volkswagen Sharan 2.0TDi</a></h4></div>
+									<div class="car-details">
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="car-price">
+										<div class="slider-text-cell text-cell cena">98 999 kč</div>
+									</div>
+									<a href="#" class="car-link highlight-link">Detail Vozu</a>
+								</div>
+							</div>
+							<div class="car-item row">
+								<div class="col-md-3">
+									<div class="car-image">
+										<a href="#"><img src="images/car2.jpg"/></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="car-title"><h4><a href="#">Volkswagen Sharan 2.0TDi</a></h4></div>
+									<div class="car-details">
+										<div class="row offer-item-description">
+											<div class="col-md-3 col-xs-6 text-cell najeto">185 342 Km</div>
+											<div class="col-md-3 col-xs-6 text-cell benzin">Nafta</div>
+											<div class="col-md-3 col-xs-6 text-cell rok">2008</div>
+											<div class="col-md-3 col-xs-6 text-cell type">Hatchback</div>											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="car-price">
+										<div class="slider-text-cell text-cell cena">98 999 kč</div>
+									</div>
+									<a href="#" class="car-link highlight-link">Detail Vozu</a>
+								</div>
+							</div>
+
+							<div class="pagination">
+								<a href="#" class="page-prev"></a>
+								<a href="#" class="active">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<span class="dots" href="#">...</span>
+								<a href="#">60</a>
+								<a href="#" class="page-next"></a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</section>
+			
+
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo-dark.png" class="logo-image-dark"/></a>
+				</div>
+				<div class="footer-text row">
+					<p class="col-sm-3">Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="copyright col-md-3">
+						© 2019 Logo.net
+					</div>
+					<div class="col-md-9">
+						<nav class="nav nav-bottom">
+							<a href="#">Domů</a>
+							<a href="#">Nabídka vozů</a>
+							<a href="#">Výkup vozů</a>
+							<a href="#">Nákup vozů</a>
+							<a href="#">Pojištění</a>
+							<a href="#">Kontakty</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+
+</html>
